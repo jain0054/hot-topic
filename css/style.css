@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Noto+Serif&display=swap');
+
+/* font-family: 'Mukta', sans-serif; */
+/* font-family: 'Noto Serif', serif; */
+
+/* General styles */
+body {
+  font-family: 'Mukta', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d5d3c8;
+  color: #524656;  
+}
+main{
+  margin: 10%;
+}
+
+h2{
+  font-family: 'Noto Serif', serif;
+}
+
+figcaption{
+  font-family: 'Noto Serif', serif;
+}
+
+.card img{
+  max-width: 100%;
+}
+
+.content img{
+  max-width: 100%;
+}
+
+
+/* Navigation */
+
+.navigation ul {
+  list-style-type: none;
+}
+.navigation a{
+  text-decoration: none;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  /* background-color: aquamarine; */
+}
+
+
+
+/* Header styles */
+header {
+  background-color: #d5d3c8
+  /* padding: 1rem; */
+}
+
+.masthead img{
+  width:100%;
+  height: auto;
+  text-align: center;  
+}
+
+
+.card {
+  padding: 2rem;
+}
+
+/* Footer styles */
+footer {
+  color: #524656;
+  padding: 2rem;
+  background-color: #d5d3c8;
+}
+
+
+
+/* Tablet View */
+@media (min-width: 35rem) and (max-width: 80rem) {
+body {
+      font-size: 1rem;
+  }
+  .navigation ul {
+    overflow: hidden;
+  }
+
+.navigation li {
+      float: left;
+  }
+
+.navigation li a {
+      display: block;
+      padding: 1rem;
+      /* background-color: aquamarine; */
+}
+
+.card img{
+  max-width: 100%;
+}
+
+.content img{
+  max-width: 100%;
+}
+  
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 10%;
+  }
+
+.content #title{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.content p {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 10%;
+}
+
+.cards{
+column-count: 2;
+text-align: center;
+}
+}
+
+
+/* Desktop View */
+@media (min-width: 80rem) {
+body {
+      font-size: 1.25rem;
+  }
+
+.navigation ul {
+    overflow: hidden;
+  }
+
+.navigation li {
+      float: left;
+  }
+
+.navigation li a {
+      display: block;
+      padding: 1rem;
+      /* background-color: aquamarine; */
+}
+
+.card img{
+  max-width: 100%;
+}
+
+.content img{
+  max-width: 100%;
+}
+
+  
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10%;
+  }
+
+.content #title{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.content p {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 10%;
+}
+
+.cards{
+column-count: 3;
+text-align: center;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+}
